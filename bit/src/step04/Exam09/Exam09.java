@@ -55,6 +55,31 @@ public class Exam09 {
     
     System.out.println(calc1);
     System.out.println(calc2);
+    
+    
+    
+  //Calculator3 사용
+    Calculator3 calc3;
+    calc3 = new Calculator3();
+    
+    Calculator3 calc4 = new Calculator3();
+    
+    //인스턴스를 메서드 앞에 두고 싶으면, 메서드 선언에 static을 붙이지 말아야 한다.
+    // -> 인스턴스 메서드 
+    calc3.plus(2); // 변수.function이 있을때는 function의 this에 자동 저장됨.
+    calc4.plus(5);
+    
+    calc3.plus(5);
+    calc4.minus(3);
+    
+    calc3.multiple(3);
+    calc4.devide(2);
+    
+    calc3.minus(1);
+    calc4.multiple(7);
+    
+    System.out.println(calc1.result);
+    System.out.println(calc2.result);
   }
 
 }
